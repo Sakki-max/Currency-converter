@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Converter</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-blobs"></div>
+    <div class="converter-card">
+        <div class="header">
+            <h1>Currency<span>X</span></h1>
+            <p>Real-time Exchange Rates</p>
+        </div>
+
+        <div class="input-section">
+            <label>Amount to Convert</label>
+            <input type="number" id="amount" value="1.00" step="0.01">
+        </div>
+
+        <div class="conversion-row">
+            <div class="select-box">
+                <label>From</label>
+                <select id="from-currency"></select>
+            </div>
+            
+            <div class="swap-icon" id="swap-btn">
+                <i class="fas fa-exchange-alt">⇄</i>
+            </div>
+
+            <div class="select-box">
+                <label>To</label>
+                <select id="to-currency"></select>
+            </div>
+        </div>
+
+        <button id="convert-btn">Convert Now</button>
+
+        <div class="result-container">
+            <span id="result-label">Converted Amount</span>
+            <div id="result">---</div>
+        </div>
+    </div>
+    <script src="currency.js"></script>
+</body>
+</html>
